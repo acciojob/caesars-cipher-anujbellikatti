@@ -54,10 +54,13 @@ let Z= "Z".charCodeAt(0); // 90
 
 function rot13(str) {
 
-let ans = ""; // "" => "$N#A" // str = "$A#N" => "SN#A" for (let i = 0; i < str.length; i++){
-
-// 4 = 0 let currentChar = str[i].charCodeAt( if(currentChar <= 2 && currentChar > ans lookup[str[i]]
-
+let ans = ""; 
+	// "" => "$N#A" // str = "$A#N" => "SN#A" 
+	for (let i = 0; i < str.length; i++){
+// 4 = 0 
+		let currentChar = str[i].charCodeAt(0); 
+			if(currentChar <= z && currentChar >=A
+			   ans+= lookup[str[i]]
 }
 
 else {
