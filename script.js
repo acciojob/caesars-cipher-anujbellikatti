@@ -47,28 +47,28 @@ const lookup = {
   "?": "?",
   ",": ",",
 };
-
-let A = "A".charCodeAt(0); /// 65
-
-let Z= "Z".charCodeAt(0); // 90
-
 function rot13(str) {
 
-let ans = ""; 
-	// "" => "$N#A" // str = "$A#N" => "SN#A" 
-	for (let i = 0; i < str.length; i++){
-// 4 = 0 
-		let currentChar = str[i].charCodeAt(0); 
-			if(currentChar <= z && currentChar >=A
-			   ans+= lookup[str[i]]
-}
+// str = "Ara"; // "Ara" => "ARA"
 
+str = str.toUpperCase(); // "M*D" => // "Z" + undefined + "Q" => ZundefinedQ
+
+let output = ""; // "" + "N" => "N"
+
+for (let i = 0; i < str.length; i++){
+
+if(lookup(str[i]]){
+
+output += lookup(str[i]] // str[0] => "A }
+				}
 else {
-
-ans += str[i];
-
+output+= str[i];
+}
 }
 
-return ans
+
+return output;
+}
+
 
 window.rot13 = rot13;
